@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 public protocol CustomButtonCenter:AnyObject{
     var imageSize:CGSize { get set }

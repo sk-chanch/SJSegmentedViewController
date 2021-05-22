@@ -111,8 +111,14 @@ open class SJSegmentTab: UIView {
         button.selectedBackgroundColor = imageST.color
     }
 
-	required override public init(frame: CGRect) {
-		super.init(frame: frame)
+    required  public init(frame: CGRect, isCustomButton:Bool = false) {
+        super.init(frame: frame)
+
+        if isCustomButton{
+            button = customButton
+        }else{
+            button = defaultButton
+        }
 
 		translatesAutoresizingMaskIntoConstraints = false
 		button.frame = bounds
