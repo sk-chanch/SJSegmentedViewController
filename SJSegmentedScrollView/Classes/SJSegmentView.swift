@@ -268,11 +268,14 @@ class SJSegmentView: UIScrollView {
 			segmentTab = SJSegmentTab.init(view: controller.navigationItem.titleView!)
 		} else {
 
-			if let title = controller.title {
-				segmentTab = SJSegmentTab.init(title: title)
-			} else {
-				segmentTab = SJSegmentTab.init(title: "")
-			}
+            if let controller = controller as? (UIViewController & ImageSegmentTabProtocol),
+               let title = controller.title{
+                segmentTab = .init(title:title, imageST: controller)
+            }else if let title = controller.title {
+                segmentTab = SJSegmentTab.init(title: title)
+            }else {
+                segmentTab = SJSegmentTab.init(title: "")
+            }
 
 			segmentTab?.backgroundColor = segmentBackgroundColor
 			segmentTab?.titleColor(titleColor!)

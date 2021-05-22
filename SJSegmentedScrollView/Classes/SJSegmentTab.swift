@@ -24,6 +24,43 @@ import Foundation
 
 typealias DidSelectSegmentAtIndex = (_ segment: SJSegmentTab?,_ index: Int,_ animated: Bool) -> Void
 
+public protocol ImageSegmentTabProtocol:AnyObject {
+    func configuration() -> SegmentTabConfig
+}
+
+public struct SegmentTabConfig {
+    
+    
+    var imageTab:UIImage
+    var imageSize:CGSize
+    var color:UIColor
+    var contentInset:UIEdgeInsets
+    
+    public init(imageTab: UIImage,
+         imageSize: CGSize = .init(width: 20, height: 20),
+         color: UIColor,
+         contentInset: UIEdgeInsets =  .init(top: 2,
+                                             left: 0,
+                                             bottom: 2,
+                                             right: 0)) {
+        self.imageTab = imageTab
+        self.imageSize = imageSize
+        self.color = color
+        self.contentInset = contentInset
+    }
+}
+
+class ButtomDefault: UIButton, CustomButtonCenter {
+    var imageSize: CGSize  = .zero
+    
+    var insetTop: CGFloat = .zero
+    
+    var selectedBackgroundColor: UIColor? = nil
+    
+    
+}
+
+
 open class SJSegmentTab: UIView {
 
 	let kSegmentViewTagOffset = 100
@@ -35,6 +72,16 @@ open class SJSegmentTab: UIView {
 			button.isSelected = isSelected
 		}
 	}
+    
+    private lazy var defaultButton:ButtonCenter = {
+        let _btn = ButtomDefault(type: .custom)
+        return _btn
+    }()
+    
+    private lazy var customButton:CustomCenterImageButton = {
+        let _btn = CustomCenterImageButton(type: .custom)
+        return _btn
+    }()
 
 	convenience init(title: String) {
 		self.init(frame: CGRect.zero)
@@ -48,6 +95,21 @@ open class SJSegmentTab: UIView {
 		view.removeConstraints(view.constraints)
 		addConstraintsToView(view)
 	}
+    
+    convenience init(title: String,
+                     imageST:ImageSegmentTabProtocol & UIViewController) {
+        self.init(frame: CGRect.zero, isCustomButton: true)
+        setTitle(title)
+        
+        
+        let imageST = imageST.configuration()
+        button.contentEdgeInsets = imageST.contentInset
+        button.setImage(imageST.imageTab,
+                        for: .normal)
+        button.tintColor = imageST.color
+        button.imageSize = imageST.imageSize
+        button.selectedBackgroundColor = imageST.color
+    }
 
 	required override public init(frame: CGRect) {
 		super.init(frame: frame)
