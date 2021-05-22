@@ -73,7 +73,7 @@ open class SJSegmentTab: UIView {
 		}
 	}
     
-    private lazy var defaultButton:ButtonCenter = {
+    private lazy var defaultButton:ButtomDefault = {
         let _btn = ButtomDefault(type: .custom)
         return _btn
     }()
