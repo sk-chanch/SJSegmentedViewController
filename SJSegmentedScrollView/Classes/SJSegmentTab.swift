@@ -64,7 +64,8 @@ class ButtomDefault: UIButton, CustomButtonCenter {
 open class SJSegmentTab: UIView {
 
 	let kSegmentViewTagOffset = 100
-	let button = UIButton(type: .custom)
+    typealias ButtonCenter = UIButton & CustomButtonCenter
+    var button:ButtonCenter!
 
 	var didSelectSegmentAtIndex: DidSelectSegmentAtIndex?
 	var isSelected = false {
@@ -73,7 +74,7 @@ open class SJSegmentTab: UIView {
 		}
 	}
     
-    private lazy var defaultButton:ButtomDefault = {
+    private lazy var defaultButton:ButtonCenter = {
         let _btn = ButtomDefault(type: .custom)
         return _btn
     }()
