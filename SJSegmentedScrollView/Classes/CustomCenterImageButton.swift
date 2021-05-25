@@ -49,11 +49,7 @@ final class CustomCenterImageButton: UIButton, CustomButtonCenter {
         }
     }
     
-    var selectedBackgroundColor:UIColor? = nil{
-        didSet{
-            viewBackground.backgroundColor = selectedBackgroundColor
-        }
-    }
+    var selectedBackgroundColor:UIColor? = nil
     
     
     override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
