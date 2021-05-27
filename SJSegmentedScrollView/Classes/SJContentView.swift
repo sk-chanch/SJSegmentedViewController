@@ -161,7 +161,7 @@ extension SJContentView: UIScrollViewDelegate {
             pageIndex = (contentViews.count - 1) - pageIndex
         }
         didSelectSegmentAtIndex?(nil, pageIndex, true)
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex"),
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(NotiHandler.shared.key)"),
                                         object: pageIndex)
     }
 }

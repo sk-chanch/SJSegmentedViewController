@@ -364,7 +364,7 @@ import UIKit
 			segmentedScrollView.segmentView?.didSelectSegmentAtIndex!(segments[index],
 			                                                          index,
 			                                                          animated)
-			NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex"),
+			NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(NotiHandler.shared.key)"),
 			                                object: index)
 		}
 	}

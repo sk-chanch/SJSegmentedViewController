@@ -22,6 +22,7 @@
 		EE6CE46D29E6143B789762C825990123 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		EED10265998E1D26D80C17779B32645A /* SJSegmentTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C27CBA23CF7DE1B9269CA5BB705CB /* SJSegmentTab.swift */; };
 		FE87709426595EE90012D476 /* CustomCenterImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE87709326595EE90012D476 /* CustomCenterImageButton.swift */; };
+		FEE26D84265F989A005BEFE3 /* NotiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE26D83265F989A005BEFE3 /* NotiHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E5B5322712D02EC60034C4D1A1D2B192 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC62BA8D4EEDCDFFF1AEA3765480414B /* SJContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SJContentView.swift; path = SJSegmentedScrollView/Classes/SJContentView.swift; sourceTree = "<group>"; };
 		FE87709326595EE90012D476 /* CustomCenterImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCenterImageButton.swift; path = SJSegmentedScrollView/Classes/CustomCenterImageButton.swift; sourceTree = "<group>"; };
+		FEE26D83265F989A005BEFE3 /* NotiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				334DBBC57FA135A655045BAAC8C09DFE /* SJUtil.swift */,
 				D81A905681BC1BF8088DCF8AE04B71D5 /* Pod */,
 				B8DDCCAAB25CD4DBC75013B7D697C874 /* Support Files */,
+				FEE26D83265F989A005BEFE3 /* NotiHandler.swift */,
 			);
 			name = SJSegmentedScrollView;
 			path = ../..;
@@ -302,6 +305,7 @@
 				181D595350D2975D3FC271E89978EC1E /* SJSegmentedScrollView-dummy.m in Sources */,
 				42BD38DD4F8BF48F094C7759FCED9EB3 /* SJSegmentedScrollView.swift in Sources */,
 				9545E1BA43722E514650364870CC4E38 /* SJSegmentedViewController.swift in Sources */,
+				FEE26D84265F989A005BEFE3 /* NotiHandler.swift in Sources */,
 				EED10265998E1D26D80C17779B32645A /* SJSegmentTab.swift in Sources */,
 				FE87709426595EE90012D476 /* CustomCenterImageButton.swift in Sources */,
 				A309D53B5E9A344A0F602F51F3491B08 /* SJSegmentView.swift in Sources */,

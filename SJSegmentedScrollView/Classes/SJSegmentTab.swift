@@ -172,7 +172,7 @@ open class SJSegmentTab: UIView {
 
 	@objc func onSegmentButtonPress(_ sender: AnyObject) {
 		let index = tag - kSegmentViewTagOffset
-		NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex"),
+		NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(NotiHandler.shared.key)"),
 		                                object: index)
         didSelectSegmentAtIndex?(self, index, true)
 	}
