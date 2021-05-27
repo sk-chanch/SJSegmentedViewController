@@ -303,7 +303,7 @@ import UIKit
     }
     
     
-    var postKey:String = ""
+    let postKey:String
     
     /**
      Custom initializer for SJSegmentedViewController.
@@ -314,19 +314,22 @@ import UIKit
      */
     required public init(headerViewController: UIViewController?,
                             segmentControllers: [UIViewController]) {
-        super.init(nibName: nil, bundle: nil)
         postKey = NotiHandler().key
+        super.init(nibName: nil, bundle: nil)
+       
         self.headerViewController = headerViewController
         self.segmentControllers = segmentControllers
         setDefaultValuesToSegmentedScrollView()
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        postKey = NotiHandler().key
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
+        postKey = NotiHandler().key
+        super.init(coder: aDecoder)
     }
     
     override open func loadView() {
