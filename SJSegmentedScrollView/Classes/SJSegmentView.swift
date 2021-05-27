@@ -54,6 +54,14 @@ class SJSegmentView: UIScrollView {
         }
     }
     
+    var segmentSelectedBackgroundColor: UIColor? {
+        didSet {
+            for segment in segments {
+                segment.selectedBackgroundColor = segmentSelectedBackgroundColor
+            }
+        }
+    }
+    
     var shadow: SJShadow? {
         didSet {
             if let shadow = shadow {

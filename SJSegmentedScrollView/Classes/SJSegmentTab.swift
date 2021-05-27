@@ -84,6 +84,12 @@ open class SJSegmentTab: UIView {
         let _btn = CustomCenterImageButton(type: .custom)
         return _btn
     }()
+    
+    var selectedBackgroundColor: UIColor?{
+        didSet{
+            button.selectedBackgroundColor = selectedBackgroundColor
+        }
+    }
 
 	convenience init(title: String) {
 		self.init(frame: CGRect.zero)
@@ -110,7 +116,7 @@ open class SJSegmentTab: UIView {
                         for: .normal)
         button.tintColor = imageST.color
         button.imageSize = imageST.imageSize
-        button.selectedBackgroundColor = imageST.color
+        button.selectedBackgroundColor = selectedBackgroundColor
     }
 
     required  public init(frame: CGRect, isCustomButton:Bool = false) {

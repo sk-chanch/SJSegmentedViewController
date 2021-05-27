@@ -120,6 +120,12 @@ class SJSegmentedScrollView: UIScrollView {
             contentView?.isScrollEnabled = !sjDisableScrollOnContentView
         }
     }
+    
+    open var segmentSelectedBackgroundColor = UIColor.clear  {
+        didSet {
+            segmentView?.segmentSelectedBackgroundColor = segmentSelectedBackgroundColor
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -271,6 +277,7 @@ class SJSegmentedScrollView: UIScrollView {
             segmentView?.font							= segmentTitleFont!
             segmentView?.bounces						= false
             segmentView!.translatesAutoresizingMaskIntoConstraints = false
+            segmentView?.segmentSelectedBackgroundColor = segmentSelectedTitleColor
             segmentView!.didSelectSegmentAtIndex = {[unowned self]
                 (segment, index, animated) in
                 self.contentView?.movePageToIndex(index, animated: animated)

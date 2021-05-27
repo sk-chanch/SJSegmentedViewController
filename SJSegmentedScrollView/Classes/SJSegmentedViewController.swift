@@ -287,6 +287,20 @@ import UIKit
     
     
     /**
+     *  Set color of SegmentedScrollView.
+     *
+     *  By default it is set to clear.
+     *
+     *  segmentedScrollViewColor.backgroundColor  = UIColor.clear
+     */
+    open var segmentSelectedBackgroundColor = UIColor.clear  {
+        didSet {
+            segmentedScrollView.segmentSelectedBackgroundColor = segmentSelectedBackgroundColor
+        }
+    }
+    
+    
+    /**
      Custom initializer for SJSegmentedViewController.
      
      - parameter headerViewController: A UIViewController
@@ -373,6 +387,7 @@ import UIKit
         segmentedScrollView.segmentViewHeight           = segmentViewHeight
         segmentedScrollView.backgroundColor             = segmentedScrollViewColor
         segmentedScrollView.sjDisableScrollOnContentView = disableScrollOnContentView
+        segmentedScrollView.segmentSelectedBackgroundColor = segmentSelectedBackgroundColor
     }
     
     /**
