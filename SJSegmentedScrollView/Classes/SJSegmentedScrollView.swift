@@ -225,6 +225,16 @@ class SJSegmentedScrollView: UIScrollView {
         }
     }
     
+    func resetObserver(){
+        for view in viewObservers {
+            view.removeObserver(self,
+                                forKeyPath: "contentOffset",
+                                context: nil)
+        }
+        
+        viewObservers = []
+    }
+    
     func addObserverFor(_ view: UIView) {
         viewObservers.append(view)
         view.addObserver(self, forKeyPath: "contentOffset",

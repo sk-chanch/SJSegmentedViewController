@@ -489,6 +489,18 @@ import UIKit
         segmentedScrollView.segmentView?.contentView = segmentedScrollView.contentView
     }
     
+    public func resetObserver(){
+        resetObserver()
+        segmentControllers.forEach{
+            if let delegate = $0 as? SJSegmentedViewControllerViewSource,
+               let view = delegate.viewForSegmentControllerToObserveContentOffsetChange?(){
+                segmentedScrollView.resetObserver()
+                segmentedScrollView.addObserverFor(view)
+            }
+        }
+      
+    }
+    
     /**
      * Method for loading content ViewControllers and header ViewController
      */
