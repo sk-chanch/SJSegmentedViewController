@@ -129,7 +129,7 @@ class SJSegmentView: UIScrollView {
     }
     
     @objc func didChangeSegmentIndex(_ notification: Notification) {
-        
+        debugPrint("notification name \(notification.name)")
         //deselect previous buttons
         for button in segments {
             button.isSelected = false
