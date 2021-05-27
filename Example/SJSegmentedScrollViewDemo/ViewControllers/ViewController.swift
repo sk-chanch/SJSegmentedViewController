@@ -53,6 +53,8 @@ class ViewController: SJSegmentedViewController {
 			showsVerticalScrollIndicator = false
 			segmentBounces = false
 			delegate = self
+            
+            segmentSelectedBackgroundColor = .orange
 		}
 
 		title = "Segment"

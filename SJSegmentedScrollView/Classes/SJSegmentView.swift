@@ -57,7 +57,7 @@ class SJSegmentView: UIScrollView {
     var segmentSelectedBackgroundColor: UIColor? {
         didSet {
             for segment in segments {
-                segment.selectedBackgroundColor = segmentSelectedBackgroundColor
+                segment.backgroundSelectedColor(segmentSelectedBackgroundColor)
             }
         }
     }
@@ -289,6 +289,7 @@ class SJSegmentView: UIScrollView {
 			segmentTab?.titleColor(titleColor!)
             segmentTab?.selectedTitleColor(selectedTitleColor!)
 			segmentTab?.titleFont(font!)
+            segmentTab?.backgroundSelectedColor(segmentSelectedBackgroundColor)
 		}
 
 		segmentTab?.didSelectSegmentAtIndex = didSelectSegmentAtIndex

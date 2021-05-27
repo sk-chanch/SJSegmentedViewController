@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SJSegmentedScrollView
 
 class FirstTableViewController: UITableViewController {
     
@@ -50,4 +51,13 @@ class FirstTableViewController: UITableViewController {
         
         return self.tableView
     }
+}
+
+
+extension FirstTableViewController:ImageSegmentTabProtocol{
+    func configuration() -> SegmentTabConfig {
+        .init(imageTab: #imageLiteral(resourceName: "image3.JPG"))
+    }
+    
+    
 }
