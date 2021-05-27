@@ -110,7 +110,7 @@ class SJSegmentView: UIScrollView {
 
 		NotificationCenter.default.addObserver(self,
 		                                       selector: #selector(SJSegmentView.didChangeSegmentIndex(_:)),
-		                                       name: NSNotification.Name("DidChangeSegmentIndex"),
+		                                       name: NSNotification.Name("DidChangeSegmentIndex\(postKey)"),
 		                                       object: nil)
     }
 
@@ -124,7 +124,7 @@ class SJSegmentView: UIScrollView {
                                     context: nil)
         
         NotificationCenter.default.removeObserver(self,
-                                                            name:NSNotification.Name("DidChangeSegmentIndex"),
+                                                            name:NSNotification.Name("DidChangeSegmentIndex\(postKey)"),
                                                             object: nil)
     }
     
