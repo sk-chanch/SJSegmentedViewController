@@ -9,9 +9,9 @@ import Foundation
 
 public struct NotiHandler {
    
-    static let shared = NotiHandler()
+    
     let key:String
-    private init() {
+    init() {
         key = "\(Date().timeIntervalSince1970)"
     }
 }

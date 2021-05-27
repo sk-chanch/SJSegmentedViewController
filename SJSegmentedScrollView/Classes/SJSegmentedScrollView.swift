@@ -127,7 +127,11 @@ class SJSegmentedScrollView: UIScrollView {
         }
     }
 
-    override init(frame: CGRect) {
+    
+    let postKey:String
+    
+    init(frame: CGRect, postKey:String) {
+        self.postKey = postKey
         super.init(frame: frame)
         
         sizeToFit()
@@ -265,7 +269,7 @@ class SJSegmentedScrollView: UIScrollView {
         
         if controllers.count > 1 {
             
-            segmentView = SJSegmentView(frame: CGRect.zero)
+            segmentView = SJSegmentView(frame: CGRect.zero, postKey: postKey)
 			segmentView?.controllers					= controllers
             segmentView?.selectedSegmentViewColor		= selectedSegmentViewColor
             segmentView?.selectedSegmentViewHeight		= selectedSegmentViewHeight!
@@ -312,7 +316,7 @@ class SJSegmentedScrollView: UIScrollView {
         
         let frame = CGRect(x: 0, y: headerViewHeight!,
                            width: bounds.size.width, height: segmentViewHeight!)
-        segmentView = SJSegmentView(frame: frame)
+        segmentView = SJSegmentView(frame: frame, postKey: postKey)
         segmentView!.didSelectSegmentAtIndex = {
             [unowned self] (segment, index, animated) in
             self.contentView?.movePageToIndex(index, animated: animated)
@@ -322,7 +326,7 @@ class SJSegmentedScrollView: UIScrollView {
     
     func createContentView() -> SJContentView {
         
-        let contentView = SJContentView(frame: CGRect.zero)
+        let contentView = SJContentView(frame: CGRect.zero, postKey: postKey)
 		contentView.showsVerticalScrollIndicator = sjShowsVerticalScrollIndicator
 		contentView.showsHorizontalScrollIndicator = sjShowsHorizontalScrollIndicator
         contentView.isScrollEnabled = !sjDisableScrollOnContentView

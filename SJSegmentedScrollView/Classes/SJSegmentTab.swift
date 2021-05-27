@@ -85,6 +85,7 @@ open class SJSegmentTab: UIView {
         return _btn
     }()
     
+    var postKey:String = ""
     
 
 	convenience init(title: String) {
@@ -172,7 +173,7 @@ open class SJSegmentTab: UIView {
 
 	@objc func onSegmentButtonPress(_ sender: AnyObject) {
 		let index = tag - kSegmentViewTagOffset
-		NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(NotiHandler.shared.key)"),
+		NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(postKey)"),
 		                                object: index)
         didSelectSegmentAtIndex?(self, index, true)
 	}

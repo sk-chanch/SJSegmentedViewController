@@ -282,7 +282,10 @@ import UIKit
     }
     
     open weak var delegate:SJSegmentedViewControllerDelegate?
-    var segmentedScrollView = SJSegmentedScrollView(frame: CGRect.zero)
+    lazy var segmentedScrollView:SJSegmentedScrollView = {
+        SJSegmentedScrollView(frame: CGRect.zero,
+                              postKey: postKey)
+    }()
     var segmentScrollViewTopConstraint: NSLayoutConstraint?
     
     
@@ -300,6 +303,8 @@ import UIKit
     }
     
     
+    var postKey:String = ""
+    
     /**
      Custom initializer for SJSegmentedViewController.
      
@@ -310,6 +315,7 @@ import UIKit
     required public init(headerViewController: UIViewController?,
                             segmentControllers: [UIViewController]) {
         super.init(nibName: nil, bundle: nil)
+        postKey = NotiHandler().key
         self.headerViewController = headerViewController
         self.segmentControllers = segmentControllers
         setDefaultValuesToSegmentedScrollView()
@@ -364,7 +370,7 @@ import UIKit
 			segmentedScrollView.segmentView?.didSelectSegmentAtIndex!(segments[index],
 			                                                          index,
 			                                                          animated)
-			NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(NotiHandler.shared.key)"),
+			NotificationCenter.default.post(name: Notification.Name(rawValue: "DidChangeSegmentIndex\(postKey)"),
 			                                object: index)
 		}
 	}

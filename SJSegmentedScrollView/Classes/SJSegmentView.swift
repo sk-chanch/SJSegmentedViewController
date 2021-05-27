@@ -97,7 +97,10 @@ class SJSegmentView: UIScrollView {
         }
     }
     
-    required override init(frame: CGRect) {
+    let postKey:String
+    
+    required init(frame: CGRect, postKey:String) {
+        self.postKey = postKey
         super.init(frame: frame)
 
 		showsHorizontalScrollIndicator = false
@@ -290,6 +293,7 @@ class SJSegmentView: UIScrollView {
             segmentTab?.selectedTitleColor(selectedTitleColor!)
 			segmentTab?.titleFont(font!)
             segmentTab?.backgroundSelectedColor(segmentSelectedBackgroundColor)
+            segmentTab?.postKey = postKey
 		}
 
 		segmentTab?.didSelectSegmentAtIndex = didSelectSegmentAtIndex
