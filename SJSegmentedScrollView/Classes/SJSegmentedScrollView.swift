@@ -277,7 +277,7 @@ class SJSegmentedScrollView: UIScrollView {
             segmentView?.font							= segmentTitleFont!
             segmentView?.bounces						= false
             segmentView!.translatesAutoresizingMaskIntoConstraints = false
-            segmentView?.segmentSelectedBackgroundColor = segmentSelectedTitleColor
+            segmentView?.segmentSelectedBackgroundColor = segmentSelectedBackgroundColor
             segmentView!.didSelectSegmentAtIndex = {[unowned self]
                 (segment, index, animated) in
                 self.contentView?.movePageToIndex(index, animated: animated)

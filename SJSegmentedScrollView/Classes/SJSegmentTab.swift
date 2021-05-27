@@ -39,7 +39,7 @@ public struct SegmentTabConfig {
     
     public init(imageTab: UIImage,
          imageSize: CGSize = .init(width: 20, height: 20),
-         color: UIColor,
+         color: UIColor = .clear,
          contentInset: UIEdgeInsets =  .init(top: 2,
                                              left: 0,
                                              bottom: 2,
