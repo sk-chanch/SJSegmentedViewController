@@ -490,11 +490,10 @@ import UIKit
     }
     
     public func resetObserver(){
-        resetObserver()
+        segmentedScrollView.resetObserver()
         segmentControllers.forEach{
             if let delegate = $0 as? SJSegmentedViewControllerViewSource,
                let view = delegate.viewForSegmentControllerToObserveContentOffsetChange?(){
-                segmentedScrollView.resetObserver()
                 segmentedScrollView.addObserverFor(view)
             }
         }
