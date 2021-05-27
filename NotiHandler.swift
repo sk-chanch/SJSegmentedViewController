@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NotiHandler {
+public struct NotiHandler {
    
     static let shared = NotiHandler()
     let key:String
