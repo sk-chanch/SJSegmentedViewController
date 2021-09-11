@@ -305,7 +305,11 @@ import UIKit
     
     let postKey:String
     
-    private(set) weak var selectedController:UIViewController?
+    public weak var selectedController:UIViewController?{
+        segmentControllers[selectedIndex]
+    }
+    
+    private var selectedIndex = 0
     
     /**
      Custom initializer for SJSegmentedViewController.
@@ -443,6 +447,7 @@ import UIKit
 
             let selectedController = self.segmentControllers[index]
             self.delegate?.didMoveToPage?(selectedController, segment: segment!, index: index)
+            self.selectedIndex = index
         }
     }
     
@@ -520,7 +525,7 @@ import UIKit
         if segments.count > 0 {
             segment = segments[0]
         }
-        selectedController = segmentControllers[0]
+        selectedIndex = segment
         
         delegate?.didMoveToPage?(segmentControllers[0],
                                  segment: segment,
