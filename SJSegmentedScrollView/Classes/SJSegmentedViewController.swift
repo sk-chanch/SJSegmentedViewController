@@ -525,7 +525,6 @@ import UIKit
         if segments.count > 0 {
             segment = segments[0]
         }
-        selectedIndex = segment
         
         delegate?.didMoveToPage?(segmentControllers[0],
                                  segment: segment,
