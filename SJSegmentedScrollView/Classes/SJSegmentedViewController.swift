@@ -305,7 +305,7 @@ import UIKit
     
     let postKey:String
     
-    public weak var selectedController:UIViewController?{
+    open weak var selectedController:UIViewController?{
         segmentControllers[selectedIndex]
     }
     
