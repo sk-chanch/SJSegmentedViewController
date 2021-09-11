@@ -26,7 +26,7 @@ import UIKit
 typealias DidSelectSegmentAtIndex = (_ segment: SJSegmentTab?,_ index: Int,_ animated: Bool) -> Void
 
 public protocol ImageSegmentTabProtocol:AnyObject {
-    func configuration() -> SegmentTabConfig
+    func configuration() -> SegmentTabConfig?
 }
 
 public struct SegmentTabConfig {
@@ -103,11 +103,16 @@ open class SJSegmentTab: UIView {
     
     convenience init(title: String,
                      imageST:ImageSegmentTabProtocol & UIViewController) {
+       
+        guard let imageST = imageST.configuration() else{
+            self.init(frame: CGRect.zero)
+            setTitle(title)
+            return
+        }
+        
         self.init(frame: CGRect.zero, isCustomButton: true)
         setTitle(title)
         
-        
-        let imageST = imageST.configuration()
         button.contentEdgeInsets = imageST.contentInset
         button.setImage(imageST.imageTab,
                         for: .normal)
