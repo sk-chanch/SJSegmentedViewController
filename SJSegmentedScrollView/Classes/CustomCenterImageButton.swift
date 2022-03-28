@@ -7,6 +7,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 public protocol CustomButtonCenter:AnyObject{
@@ -120,3 +121,4 @@ final class CustomCenterImageButton: UIButton, CustomButtonCenter {
     
     
 }
+#endif

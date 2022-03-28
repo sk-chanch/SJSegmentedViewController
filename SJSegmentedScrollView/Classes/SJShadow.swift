@@ -22,6 +22,7 @@
 
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 @objc open class SJShadow: NSObject {
@@ -84,3 +85,4 @@ import UIKit
                         opacity: 0.4)
     }
 }
+#endif

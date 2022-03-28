@@ -21,6 +21,7 @@
 //  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 typealias DidSelectSegmentAtIndex = (_ segment: SJSegmentTab?,_ index: Int,_ animated: Bool) -> Void
@@ -188,3 +189,4 @@ open class SJSegmentTab: UIView {
         button.selectedBackgroundColor = color
     }
 }
+#endif

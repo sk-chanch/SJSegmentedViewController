@@ -23,6 +23,16 @@
 		65ED4A0F1D6FF8B900B2EE28 /* SJSegmentedScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ED4A0E1D6FF8B900B2EE28 /* SJSegmentedScrollView.framework */; };
 		65ED4A151D70043600B2EE28 /* image3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 65ED4A141D70043600B2EE28 /* image3.JPG */; };
 		F2438B1AEF5EEE18592D14BD /* Pods_SJSegmentedScrollViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B06FF892F6EAAE77A7744 /* Pods_SJSegmentedScrollViewDemo.framework */; };
+		FE5A6C4D27F1DAB8003EF5C6 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FE5A6C4327F1DAB8003EF5C6 /* .gitkeep */; };
+		FE5A6C4E27F1DAB8003EF5C6 /* CustomCenterImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4427F1DAB8003EF5C6 /* CustomCenterImageButton.swift */; };
+		FE5A6C4F27F1DAB8003EF5C6 /* NotiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4527F1DAB8003EF5C6 /* NotiHandler.swift */; };
+		FE5A6C5027F1DAB8003EF5C6 /* SJContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4627F1DAB8003EF5C6 /* SJContentView.swift */; };
+		FE5A6C5127F1DAB8003EF5C6 /* SJSegmentedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4727F1DAB8003EF5C6 /* SJSegmentedScrollView.swift */; };
+		FE5A6C5227F1DAB8003EF5C6 /* SJSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4827F1DAB8003EF5C6 /* SJSegmentedViewController.swift */; };
+		FE5A6C5327F1DAB8003EF5C6 /* SJSegmentTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4927F1DAB8003EF5C6 /* SJSegmentTab.swift */; };
+		FE5A6C5427F1DAB8003EF5C6 /* SJSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4A27F1DAB8003EF5C6 /* SJSegmentView.swift */; };
+		FE5A6C5527F1DAB8003EF5C6 /* SJShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4B27F1DAB8003EF5C6 /* SJShadow.swift */; };
+		FE5A6C5627F1DAB8003EF5C6 /* SJUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A6C4C27F1DAB8003EF5C6 /* SJUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +62,16 @@
 		81D33DFEACCD76037A928394 /* Pods-SJSegmentedScrollViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJSegmentedScrollViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJSegmentedScrollViewDemo/Pods-SJSegmentedScrollViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BFD50314B40DA82219AAC1C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C05021CD10857241E6264427 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FE5A6C4327F1DAB8003EF5C6 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FE5A6C4427F1DAB8003EF5C6 /* CustomCenterImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCenterImageButton.swift; sourceTree = "<group>"; };
+		FE5A6C4527F1DAB8003EF5C6 /* NotiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiHandler.swift; sourceTree = "<group>"; };
+		FE5A6C4627F1DAB8003EF5C6 /* SJContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJContentView.swift; sourceTree = "<group>"; };
+		FE5A6C4727F1DAB8003EF5C6 /* SJSegmentedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJSegmentedScrollView.swift; sourceTree = "<group>"; };
+		FE5A6C4827F1DAB8003EF5C6 /* SJSegmentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJSegmentedViewController.swift; sourceTree = "<group>"; };
+		FE5A6C4927F1DAB8003EF5C6 /* SJSegmentTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJSegmentTab.swift; sourceTree = "<group>"; };
+		FE5A6C4A27F1DAB8003EF5C6 /* SJSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJSegmentView.swift; sourceTree = "<group>"; };
+		FE5A6C4B27F1DAB8003EF5C6 /* SJShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJShadow.swift; sourceTree = "<group>"; };
+		FE5A6C4C27F1DAB8003EF5C6 /* SJUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				FE5A6C4227F1DAB8003EF5C6 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				64A421591D3D4543009BFBFE /* SJSegmentedScrollViewDemo */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -143,6 +164,24 @@
 				81D33DFEACCD76037A928394 /* Pods-SJSegmentedScrollViewDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE5A6C4227F1DAB8003EF5C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE5A6C4327F1DAB8003EF5C6 /* .gitkeep */,
+				FE5A6C4427F1DAB8003EF5C6 /* CustomCenterImageButton.swift */,
+				FE5A6C4527F1DAB8003EF5C6 /* NotiHandler.swift */,
+				FE5A6C4627F1DAB8003EF5C6 /* SJContentView.swift */,
+				FE5A6C4727F1DAB8003EF5C6 /* SJSegmentedScrollView.swift */,
+				FE5A6C4827F1DAB8003EF5C6 /* SJSegmentedViewController.swift */,
+				FE5A6C4927F1DAB8003EF5C6 /* SJSegmentTab.swift */,
+				FE5A6C4A27F1DAB8003EF5C6 /* SJSegmentView.swift */,
+				FE5A6C4B27F1DAB8003EF5C6 /* SJShadow.swift */,
+				FE5A6C4C27F1DAB8003EF5C6 /* SJUtil.swift */,
+			);
+			name = Classes;
+			path = ../SJSegmentedScrollView/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +249,7 @@
 			files = (
 				64A421691D3D4543009BFBFE /* LaunchScreen.xib in Resources */,
 				64A4216C1D3D4543009BFBFE /* Images.xcassets in Resources */,
+				FE5A6C4D27F1DAB8003EF5C6 /* .gitkeep in Resources */,
 				65ED4A151D70043600B2EE28 /* image3.JPG in Resources */,
 				64A4216A1D3D4543009BFBFE /* Main.storyboard in Resources */,
 			);
@@ -261,16 +301,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5A6C5027F1DAB8003EF5C6 /* SJContentView.swift in Sources */,
+				FE5A6C5127F1DAB8003EF5C6 /* SJSegmentedScrollView.swift in Sources */,
 				64A421721D3D4543009BFBFE /* ViewController.swift in Sources */,
+				FE5A6C5427F1DAB8003EF5C6 /* SJSegmentView.swift in Sources */,
 				64EE32D81DE839340003EA2A /* PresentHeaderViewController.swift in Sources */,
+				FE5A6C5327F1DAB8003EF5C6 /* SJSegmentTab.swift in Sources */,
+				FE5A6C5227F1DAB8003EF5C6 /* SJSegmentedViewController.swift in Sources */,
 				64A421701D3D4543009BFBFE /* SecondViewController.swift in Sources */,
 				64A4216E1D3D4543009BFBFE /* FirstTableViewController.swift in Sources */,
+				FE5A6C4F27F1DAB8003EF5C6 /* NotiHandler.swift in Sources */,
 				64A421711D3D4543009BFBFE /* ThirdViewController.swift in Sources */,
 				648742301DAE2D8100E76916 /* CollectionViewController.swift in Sources */,
 				64EE32DA1DE83EB40003EA2A /* ExamplePresentViewController.swift in Sources */,
 				64A421681D3D4543009BFBFE /* AppDelegate.swift in Sources */,
+				FE5A6C5527F1DAB8003EF5C6 /* SJShadow.swift in Sources */,
 				64A4216F1D3D4543009BFBFE /* HeaderViewController.swift in Sources */,
 				64EE32DC1DE840440003EA2A /* ExamplePushViewController.swift in Sources */,
+				FE5A6C5627F1DAB8003EF5C6 /* SJUtil.swift in Sources */,
+				FE5A6C4E27F1DAB8003EF5C6 /* CustomCenterImageButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +396,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -396,6 +446,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -408,6 +459,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQXVMM94CM;
 				INFOPLIST_FILE = SJSegmentedScrollViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -415,12 +468,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.SJSegmentedScrollViewDemo;
 				PRODUCT_NAME = SJSegmentedScrollViewDemo;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
 			};
 			name = Debug;
 		};
@@ -430,6 +487,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQXVMM94CM;
 				INFOPLIST_FILE = SJSegmentedScrollViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -437,14 +496,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.SJSegmentedScrollViewDemo;
 				PRODUCT_NAME = SJSegmentedScrollViewDemo;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
 			};
 			name = Release;
 		};
