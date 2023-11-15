@@ -23,7 +23,7 @@
 #if canImport(UIKit)
 import UIKit
 
-class SJSegmentedScrollView: UIScrollView {
+public class SJSegmentedScrollView: UIScrollView {
     
     var segmentView: SJSegmentView?
     
@@ -399,7 +399,7 @@ class SJSegmentedScrollView: UIScrollView {
         }
     }
 
-	override func observeValue(forKeyPath keyPath: String?,
+    public override func observeValue(forKeyPath keyPath: String?,
 	                           of object: Any?,
 	                           change: [NSKeyValueChangeKey : Any]?,
 	                           context: UnsafeMutableRawPointer?) {

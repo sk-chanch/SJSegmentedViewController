@@ -283,7 +283,7 @@ import UIKit
     }
     
     open weak var delegate:SJSegmentedViewControllerDelegate?
-    lazy var segmentedScrollView:SJSegmentedScrollView = {
+    public lazy var segmentedScrollView:SJSegmentedScrollView = {
         SJSegmentedScrollView(frame: CGRect.zero,
                               postKey: postKey)
     }()
